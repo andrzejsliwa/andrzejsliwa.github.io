@@ -1,0 +1,88 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "@andrzejsliwa"
+author: "Andrzej Śliwa"
+description: Devblog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yous.be" # the base hostname & protocol for your site, e.g. http://example.com
+# theme: jekyll-whiteglass
+timezone: UTC
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Rakefile
+  - spec
+  - vendor
+
+# Social media
+twitter_username: andrzejsliwa
+github_username: andrzejsliwa
+
+google_analytics: UA-7007499-1
+
+# Plugins
+gems:
+  - jekyll-archives
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+excerpt_separator: "<!-- more -->"
+
+# Outputting
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+feed:
+  path: atom.xml
+
+# Markdown settings
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - fenced_code_blocks
+    - autolink
+    - strikethrough
+    - superscript
+    - footnotes
+    - smart
+
+# jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+
+# jekyll-compress-html
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
