@@ -8,7 +8,7 @@ favicon: /favicon.ico
 twitter_handler: andrzejsliwa
 analytics_code: UA-7007499-1
 disqus: andrzejsliwa
-baseurl: https://andrzejsliwa.com
+baseurl: /
 
 # Social Accounts
 social_networks:
