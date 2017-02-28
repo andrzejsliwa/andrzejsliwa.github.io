@@ -99,7 +99,7 @@ Here you will find basic test cases for my **HandlerWatcher**:
        assert_receive :handle_event_called
      end
 
-    [ @tag](http://twitter.com/tag) capture_log: true
+     @tag capture_log: true
      test “handler was re-added automatically”,
        %{name: name} do
        assert {:ok, _pid} =
