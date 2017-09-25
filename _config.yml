@@ -23,7 +23,7 @@ show_email: 1
 show_rss: 1
 show_comments: 1
 show_menu: 1
-fixed_sidebar: 1
+fixed_sidebar: 0
 
 # Defaults
 defaults:
@@ -35,7 +35,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: "http://andrzejsliwa.com"
+url: ""
 baseurl: ""
 
 # Includes
@@ -53,9 +53,8 @@ paginate_path: "/page:num/"
 markdown: kramdown
 excerpt_separator: <!--more-->
 
-plugins_dir: ./_plugins
-
 # Assets Settings
 sass:
   sass_dir: assets/partials
   style: compressed
+
