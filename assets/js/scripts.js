@@ -1,7 +1,9 @@
+svg4everybody();
+
 jQuery(document).ready( function() {
 
     // Makes all videos responsive.
-    $(".the-content").fitVids();
+    jQuery(".the-content").fitVids();
 
     // Shows the number of search results.
     jQuery('#search-input').on('focus', function() {
@@ -10,7 +12,7 @@ jQuery(document).ready( function() {
 
     // Shows available sharing options.
     jQuery('.share').on('click', function() {
-        $(this).addClass('active');
+        jQuery(this).addClass('active');
     });
 
     // Hides available sharing options and the number of search results.
@@ -19,6 +21,17 @@ jQuery(document).ready( function() {
             jQuery('.show-results-count').removeClass('active');
             jQuery('.results-container').hide();
             jQuery('.share').removeClass('active');
+        }
+    });
+
+    // Generates a quick link to the current heading section.
+    jQuery('.post-content').find(':header').on({
+        mouseenter: function() {
+            var headingID = jQuery(this).attr('id');
+            jQuery(this).append('<a class="heading-marker" href="#' + headingID + '">&#35;</a>');
+        },
+        mouseleave: function () {
+            jQuery(this).children('a').remove();
         }
     });
 
@@ -37,7 +50,7 @@ jQuery(document).ready( function() {
     function fixedSidebar() {
         var scrollPos = jQuery(window).scrollTop();
         if (scrollPos >= steveSidebarPos) {
-            steveSidebar.css({'top': scrollPos - 80});
+            steveSidebar.css({'top': scrollPos - 70});
         }
         else if (scrollPos === 0) {
             steveSidebar.css({'top': 0});

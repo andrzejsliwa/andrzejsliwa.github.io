@@ -3,62 +3,29 @@
 
 @import "vars", "reset", "mixins";
 
-#aboutme-section {
-	font-size: 19px;
+.wrapper {
+	max-width: $default-width; margin: 0 auto; padding: 70px 20px;
+
 }
 
-.about-text {
-	position: relative;
-	margin-left: 30px;
-}
-
-.about-icon {
-	font-size: 24px;
-	position: absolute;
-	left: -40px;
-	margin-top: 5px;
-}
-
-#aboutme-section p:last-child {
-	margin-bottom: 0;
-}
-
-#contactme-section {
-	font-size: 19px;
-	margin-top: 60px;
-}
-
-#contactme-section h1 {
-	font-size: 50px;
-}
-
-#contact-form p {
-	margin-bottom: 10px;
-}
-
-#contact-form .form-control {
-	margin-bottom: 15px;
-}
-
-.wrapper { max-width: $default-width; margin: 0 auto; padding: 80px 20px; }
-
-.user-profile { position: relative; float: left; width: 28%; margin-right: 4%; padding: 20px 0 0; text-align: center;
+.user-profile { position: relative; float: left; width: 28%; margin-right: 2%; padding: 20px 0 0; text-align: center;
 	& > * { display: block; }
-	.avatar { max-width: 140px; max-height: 140px; border-radius: 50%; margin: 0 auto 25px; }
+	.avatar { max-width: 220px; max-height: 220px; border-radius: 50%; margin: 0 auto 25px; }
 	.my-name { font-size: 24px; font-weight: 700; line-height: 30px; color: $grey-color-dark; }
 	.my-job-title { font-size: 14px; font-weight: 300; margin: 5px 0 0; }
 	.mainmenu { margin: 40px 0; text-align: center;
-		a { display: block; max-width: 300px; margin: 0 auto; padding: 15px 0; border: 1px solid $grey-color-lightest; background: $background-color; box-shadow: 0 2px 3px rgba($black,.05); @include transition(all, .1s, linear);
-			&:hover, &.active { background: darken($background-color, 1%); border-left: 4px solid $grey-color-lightest; }
+		a { display: block; max-width: 300px; margin: 0 auto; padding: 15px 0; border: 1px solid $grey-color-lightest; border-top: none; background: $background-color; box-shadow: 0 2px 3px rgba($black,.05); @include transition(all, .1s, linear);
+			&:hover, &.active { background: darken($background-color, 1%); box-shadow: 0 2px 3px rgba($black,.05), inset 4px 0 0 $primary-color; }
+			&:first-of-type { border-top: 1px solid $grey-color-lightest; }
 		}
 	}
 	.about-me { font-size: 16px; line-height: 26px; margin: 30px 0 0; }
 	ul { font-size: 0; margin: 25px 0 0;
 		li { display: inline-block; margin: 5px;
-			a { position: relative; display: block; width: 40px; height: 40px; line-height: 40px; background: darken($grey-color-lightest, 6%); border-radius: 50%;
+			a { position: relative; display: block; width: 40px; height: 40px; line-height: 40px; background: darken($grey-color-lightest, 6%); border-radius: 50%; @include transition(all, .07s, linear);
 				&:hover { background: $primary-color; }
 				svg { display: inline-block; vertical-align: middle;
-					* { fill: $white;  }
+					* { fill: $white; }
 				}
 			}
 		}
@@ -92,7 +59,7 @@
 
 		.post-header {
 			ul { margin: 0 0 4px;
-				li { position: relative; float: left; margin: 0 0 0 10px; padding: 0 0 0 12px; text-transform: uppercase; font-size: 13px; letter-spacing: 0.05em; color: $grey-color-light;
+				li { position: relative; float: left; margin: 0 0 0 10px; padding: 0 0 0 12px; text-transform: uppercase; font-size: 12px; letter-spacing: 0.06em; color: $grey-color-light;
 					&:first-of-type { margin: 0; padding: 0;
 						&:before { content: none; }
 					}
@@ -119,13 +86,17 @@
 
 			em, strong { color: $grey-color-dark; }
 
-			h1, h2, h3, h4, h5, h6 { margin: 30px 0; color: $grey-color-dark; }
+			h1, h2, h3, h4, h5, h6 { position: relative; left: -40px; padding: 0 0 0 40px; margin: 30px 0; color: $grey-color-dark; }
 			h1 { font-size: 30px; }
 			h2 { font-size: 26px; }
 			h3 { font-size: 22px; }
 			h4 { font-size: 20px; }
 			h5 { font-size: 18px; }
 			h6 { font-size: 16px; }
+
+			.heading-marker { position: absolute; left: 15px; top: 50%; border: none; font-weight: 400; color: darken($grey-color-lightest, 8%); font-size: 24px; @include transition(color, .1s, linear); @include translate(0, -50%);
+				&:hover { color: $grey-color-light; }
+			}
 
 			a { color: $primary-color; border-bottom: 1px solid $primary-color;
 				&:hover { border: none; }
@@ -161,14 +132,7 @@
 
 		.post-footer { position: absolute; bottom: 0; left: 0; width: 100%; border-top: 1px solid $grey-color-lightest; background: lighten($grey-color-lightest, 5%);
 			div { float: left; min-height: 48px; border-right: 1px solid $grey-color-lightest; font-size: 11px; line-height: 48px; text-transform: uppercase; color: $grey-color-light;
-				&.mood { padding: 0 40px 0 20px; z-index: 10; background: lighten($grey-color-lightest, 5%);
-					&.happy { background: url(../svg/mood-icons.svg#smiley-happy) no-repeat calc(100% - 20px) center; @include bgsizeNum(12px, 12px); }
-					&.sad { background: url(../svg/mood-icons.svg#smiley-sad) no-repeat calc(100% - 20px) center; @include bgsizeNum(12px, 12px); }
-					&.angry { background: url(../svg/mood-icons.svg#smiley-angry) no-repeat calc(100% - 20px) center; @include bgsizeNum(12px, 12px); }
-					&.speechless { background: url(../svg/mood-icons.svg#smiley-speechless) no-repeat calc(100% - 20px) center; @include bgsizeNum(12px, 12px); }
-				}
-
-				&.share { position: relative; z-index: 10; padding: 0 20px 0 40px; background: lighten($grey-color-lightest, 5%) url(../svg/share-icon.svg) no-repeat 20px center; @include bgsizeNum(10px, 10px); cursor: pointer;
+					&.share { position: relative; z-index: 10; padding: 0 20px 0 40px; background: lighten($grey-color-lightest, 5%) url(../svg/share-icon.svg) no-repeat 20px center; @include bgsizeNum(10px, 10px); cursor: pointer;
 					&:hover { background-color: $white; }
 					&.active { background-color: $white;
 						.social-networks { display: block; }

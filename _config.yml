@@ -1,27 +1,24 @@
 # General Settings
 name: Andrzej Śliwa
-job_title: Software Ninja
-email: youremail@gmail.com
-description: Entrepreneurship & startup samurai. Engineering team sensei. Black belt in problem solving.
-avatar: /assets/images/avatar.jpg
+job_title: CTO, Polyglot Developer
+email: andrzej.sliwa@gmail.com
+description: I'm leading Engineering Team at Acatus GmbH. I'm addicted to travelling and hiking at any given (and non-given) moment, getting into philosophical debates, and building the things. I'm coding since when software was stored on 5'25 floppies. Follow me on Twitter or drop me a line.
+avatar: /assets/images/avatar.png
 favicon: /favicon.ico
-twitter_handler: andrzejsliwa
-analytics_code: UA-7007499-1
+twitter_handler: your_handler
+analytics_code: UA-XXXXXXX-2
 disqus: andrzejsliwa
-baseurl: /
 
 # Social Accounts
 social_networks:
-
 -  { name: twitter, url: 'http://twitter.com/andrzejsliwa' }
 -  { name: linkedin, url: 'https://www.linkedin.com/in/sliwa' }
--  { name: skype, url: 'skype:andrzej.sliwa?call' }
+-  { name: skype, url: 'andrzej.sliwa' }
 -  { name: github, url: 'https://github.com/andrzejsliwa' }
 
 # Modules Settings
 show_categories: 1
 show_tags: 1
-show_mood: 1
 show_email: 1
 show_rss: 1
 show_comments: 1

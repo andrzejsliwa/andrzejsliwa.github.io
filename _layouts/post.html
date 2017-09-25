@@ -24,9 +24,6 @@ layout: default
     </div>
 
     <footer class="post-footer">
-        {% if site.show_mood == 1 and page.mood %}
-        <div class="mood {{ page.mood }}" title="{{ page.mood | capitalize }}">Mood</div>
-        {% endif %}
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]={{page.title | strip_html }}&p[summary]={{page.content | strip_html | truncate: 140 }}&p[url]={{ page.url | prepend: site.baseurl | prepend: site.url }}" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>

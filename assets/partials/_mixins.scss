@@ -33,10 +33,17 @@
 	background-size: $type;
 }
 
-
 @mixin bgsizeNum($size1, $size2) {
 	-webkit-background-size: $size1 $size2;
 	-moz-background-size: $size1 $size2;
 	-o-background-size: $size1 $size2;
 	background-size: $size1 $size2;
+}
+
+@mixin transform-none() {
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
 }
