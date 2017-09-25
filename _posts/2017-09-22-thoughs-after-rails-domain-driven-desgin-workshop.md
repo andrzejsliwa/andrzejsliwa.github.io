@@ -38,7 +38,7 @@ that way of testing should stay simple?
 - how to pass internal state from one instance to the next one?
 - how handle use case when method will not be available? (because of promoting). I see so far two solutions for it: check if instance respond to method or let it fail. In such case monitoring will be important
 
-The idea definitely deserves for investing some time on it, I would like to verify the thesis: ***The code will be more clean and more explicit than maintaining internal state and using aggregate which act as state machine*** (with rising / throwing custom exceptions on wrong states of aggregate)
+The idea definitely deserves for investing some time on it, I would like to verify the thesis: ***The code will be more clean and more explicit than maintaining internal state and using aggregate which act as state machine*** (with raising / throwing custom exceptions on wrong states of aggregate)
 
 I would like to verify this thesis is near future by prototyping such solution.
 
