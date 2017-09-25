@@ -4,6 +4,7 @@ date: 2016-03-20 12:36
 title: "Documentation - Configuration & First Steps"
 description: Basic information about the Steve.
 comments: false
+published: false
 category: 
 - docs
 - help

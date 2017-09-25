@@ -116,6 +116,7 @@ module Jekyll
     priority :low
 
     def generate(site)
+      puts "GENERATE"
       site.write_category_indexes
     end
 

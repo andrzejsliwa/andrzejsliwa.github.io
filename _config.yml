@@ -53,6 +53,8 @@ paginate_path: "/page:num/"
 markdown: kramdown
 excerpt_separator: <!--more-->
 
+plugins_dir: ./_plugins
+
 # Assets Settings
 sass:
   sass_dir: assets/partials
