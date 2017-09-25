@@ -22,7 +22,7 @@ We had discussed numbers of different topics. Some of them were related to **Rai
 - support for refactoring (renaming / moving of Events, Aggregates) [https://github.com/RailsEventStore/rails_event_store/issues/113](https://github.com/RailsEventStore/rails_event_store/issues/113)
 [https://github.com/RailsEventStore/rails_event_store/issues/112](https://github.com/RailsEventStore/rails_event_store/issues/112)
 
-## The New Hope
+## The New Hope (or Empire Strike Back;)
 The most promising discussion was about idea of how to remove conditional logic from aggregates which slowly become similar to state machines. I think [**Andrzej Krzywda**](https://twitter.com/andrzejkrzywda
 ) proposed the concept when instead of keeping just one class of aggregate you can model aggregate as multiple classes equivalent to specific state of aggregate. This means that on each **apply** of the **event** to the aggregate we are **promoting /  upgrading** aggregate by replacing one instance of class with **new** instance of **class** which represent **next state**. This will lets keep only methods possible to call on specific state (and class) of aggregate. Promoting of Aggregate classes can look like that:
 
