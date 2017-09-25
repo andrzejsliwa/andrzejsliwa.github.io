@@ -9,9 +9,9 @@ tags:
 ---
 Today I come back from **Rails + Domain Driven Design** workshop organised and made by [Arkency](http://arkency.com/). To be honest I wasn’t best target audience for such workshop. The main reason for it is that I can't consider my self as beginner in topics of **Domain Driven Design**, **CQRS** or **Event Sourcing**. Even then I took a part of this workshop to validates some of my experiences and knowledge about mentioned concepts. 
 
-For the price of training I got **3 strong practitioners** ([Andrzej Krzywda](https://twitter.com/andrzejkrzywda
+For the price of workshop I got **3 strong practitioners** ([Andrzej Krzywda](https://twitter.com/andrzejkrzywda
 ), [Paweł Pacana](https://twitter.com/pawelpacana), [Robert Pankowiecki](https://twitter.com/pankowecki)) in same room. 
-We had discussed numbers of different topics. Some of them were related to **RailsEventStore** ecosystem. We also talk ed about directions and roadmap of changes which [coming to it](https://github.com/RailsEventStore/rails_event_store/pull/86). Some discussion were more related for conceptual scooping and storming. The outcome of it was some ideas about scope of training, about potential next step in development of **RailsEventStore**. In particular I proposed already few potentials improvements such as:
+We had discussed numbers of different topics. Some of them were related to **RailsEventStore** ecosystem. We also talk ed about directions and roadmap of changes which [coming to it](https://github.com/RailsEventStore/rails_event_store/pull/86). Some discussion were more related for conceptual scooping and storming. The outcome of it was some ideas about scope of workshop, about potential next step in development of **RailsEventStore**. In particular I proposed already few potentials improvements such as:
  
 - versioning of events 
 - strong contracts: [contract.ruby](https://egonschiele.github.io/contracts.ruby/), [dry-types](http://dry-rb.org/gems/dry-types/), [dry-struct](http://dry-rb.org/gems/dry-struct/)
@@ -44,7 +44,7 @@ I would like to verify this thesis is near future by prototyping such solution.
 
 ## Thanks
 
-Going back to the training I would like to thanks to [Andrzej Krzywda](https://twitter.com/andrzejkrzywda
+Going back to the workshop I would like to thanks to [Andrzej Krzywda](https://twitter.com/andrzejkrzywda
 ), [Paweł Pacana](https://twitter.com/pawelpacana), [Robert Pankowiecki](https://twitter.com/pankowecki) for being patien and for given time.
 
 ## Retrospection
