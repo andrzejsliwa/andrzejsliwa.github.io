@@ -1,12 +1,12 @@
 # General Settings
 name: Andrzej Śliwa
 job_title: CTO, Polyglot Developer
-email: youremail@gmail.com
-description: I'm leading Engineering Team at Acatus GmbH. I'm addicted to travelling and hiking at any given (and non-given) moment, getting into philosophical debates, and building the things. I'm coding since when software was stored on 5'25 floppies. Follow me on Twitter or drop me a line.
+email: andrzej.sliwa@i-tool.eu
+description: I'm leading Engineering Team. I'm addicted to travelling and hiking at any given (and non-given) moment, getting into philosophical debates, and building the things. I'm coding since when software was stored on 5'25 floppies. Follow me on Twitter or drop me a line.
 avatar: /assets/images/avatar.png
 favicon: /favicon.ico
-twitter_handler: your_handler
-analytics_code: UA-7007499-1
+twitter_handler: andrzejsliwa
+analytics_code:
 disqus: andrzejsliwa
 
 # Social Accounts
