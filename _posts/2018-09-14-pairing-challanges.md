@@ -14,7 +14,7 @@ In discussions, they provided lots of insights from last few weeks of pairing to
 - how to maximize pairing benefits and avoid issues like being too exhausted, brain melted, etc.?
 - how to let 3rd person jump in (in same feature team) and understand technical issues of the project?
 
-# Tradeoffs
+# Trade-offs
 
 Based on this questions we can separate a few tradeoffs related to constant pairing:
 
@@ -24,7 +24,7 @@ Based on this questions we can separate a few tradeoffs related to constant pair
 
 # Ideas
 
-In discussions with my team members I collected set of ideas which address some of the tradeoffs listed above:
+In discussions with my team members I collected a set of ideas which address some of the tradeoffs listed above:
 
 #### Pairing only on kickoff - of structure/architecture then splitting
 
@@ -85,9 +85,13 @@ Pros:
 
 Cons (and Pros)
 - will require more communication on dedicated slack channels
-- will need more structured discussion focused on a well-defined outcome (when will be difficult to achieve the outcome we can write post about the subject)
+- will need more structured discussion focused on a well-defined outcome (when will be difficult to achieve the outcome we can write a post about the subject)
 - will persist one-to-one discussion outcomes to rest of the team (as summary similar to "Meeting minutes")
 - will increase the number of channels, but it will be more structured on oriented on the subject (vs. discussion on Engineering channel)
 
 # Conclusion
-Pairing is an individual experience, limited by personal preferences, working style, and personality. Founding good pairing mate isn't easy and requires building the trustful and respectful relation, after years of working together some mates can almost read your mind. Provided ideas are not ultimate answers instead set of ideas about how to make pairing a more enjoyable experience and more beneficial for all of us.
+Pairing is an individual experience, limited by personal preferences, working style, and personality. 
+Founding good pairing mate isn't easy and requires building the trustful and respectful relation, 
+after years of working together some mates can almost read your mind. Like every technique have own trade-offs.
+Provided ideas are not ultimate answers, they are instead set of ideas about how to make pairing a more enjoyable 
+experience and more beneficial for all of us.
