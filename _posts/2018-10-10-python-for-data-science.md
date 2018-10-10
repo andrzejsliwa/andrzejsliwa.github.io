@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2018-10-10 20:20
-title: "Data Science and Machine Learning with Python"
+title: "Data Science with Python - Configuration of Environment"
 tags:
 - Data Science
 - Python
