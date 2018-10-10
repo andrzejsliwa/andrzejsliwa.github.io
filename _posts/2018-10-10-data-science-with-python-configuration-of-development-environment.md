@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2018-10-10 20:20
-title: "Data Science with Python - Configuration of Environment"
+title: "Data Science with Python - Configuration of Development Environment"
 tags:
 - Data Science
 - Python
@@ -257,6 +257,7 @@ We are ready to start a new notebook from vscode
 Now we can run cells directly from python code.
 ![install jupyter plugin on vs code](/assets/images/run-cell-min.png)
 
-Like you see, on right side we have properly running Jupyter notebook.
+Like you see, on right side we have properly running Jupyter notebook. You can notice that `#%%` is a place holder
+for runnable cells.
 
 That's it today, I hope all steps were well explained, in case of any issues, feel free to contact me over twitter.
