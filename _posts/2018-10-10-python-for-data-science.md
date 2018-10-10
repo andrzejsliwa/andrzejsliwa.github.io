@@ -226,15 +226,15 @@ We will use `matplotlib` in jupyter to show you benefits of the interactive envi
 As next step I strongly recommend the installation of [Visual Studio Code](https://code.visualstudio.com/) and dedicated plugin for [Jupyter](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jupyter):
 
 After reloading editor, you will be able to run jupyter directly from Visual Studio Code:
-![install jupyter plugin on vs code](/assets/images/install-jupyter-on-vscode.png)
+![install jupyter plugin on vs code](/assets/images/install-jupyter-on-vscode-min.png)
 
 We need to setup an editor environment:
-![install jupyter plugin on vs code](/assets/images/setup-environment.png)
+![install jupyter plugin on vs code](/assets/images/setup-environment-min.png)
 
 ## Running jupyter in Visual Studio Code
 
 Select our environment (same which we activate before)
-![install jupyter plugin on vs code](/assets/images/select-environment.png)
+![install jupyter plugin on vs code](/assets/images/select-environment-min.png)
 
 You can paste this example to your python file:
 ```python
@@ -252,10 +252,10 @@ plt.show()
 ```
 
 We are ready to start a new notebook from vscode
-![install jupyter plugin on vs code](/assets/images/start-new-notebook.png)
+![install jupyter plugin on vs code](/assets/images/start-new-notebook-min.png)
 
 Now we can run cells directly from python code.
-![install jupyter plugin on vs code](/assets/images/run-cell.png)
+![install jupyter plugin on vs code](/assets/images/run-cell-min.png)
 
 Like you see, on right side we have properly running Jupyter notebook.
 
